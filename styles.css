@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#top{
+    display: flex;
+    gap: 20px;
+    /* justify-content: space-between; */
+}
+#top img{
+    border-radius: 180px;
+}
+#latest-entry-list{
+    list-style: none;
+    
+}
+
+#latest-entry-list li{
+    padding: 5px 10px 5px 10px;
+    /* border: 5px solid; */
+    border-radius: 25px;
+    
+    margin-bottom: 10px;
+
+
+    background-color: rgb(237, 237, 237);
+}
