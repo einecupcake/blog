@@ -29,10 +29,7 @@ p {
 }
 
 #latest-entry-list li strong {
-    /* color: #0066cc; blue-ish*/
     color: #22c55e;
-
-
 }
 
 #top img {
@@ -72,10 +69,7 @@ p {
     }
 
     #latest-entry-list li strong {
-        /* color: #4a9eff; blue-ish */
         color: #4ade80;
-
-
     }
 
     #top img {
@@ -93,8 +87,9 @@ p {
     }
     
     #top img {
-        width: 120px;
-        max-height: 120px;
+        width: 120px !important;
+        max-height: 120px !important;
+        align-self: center;
     }
 }
 
