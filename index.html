@@ -1,130 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eine Blog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div id="top">
-        <img src="images/kitty.jpg" alt="kitty">
+        <img src="images/image.png" alt="kitty">
         <div>
             <h1>einecupcake's blog</h1>
             <p>this is my goofy "blog" that will be written in a very silly manner and hopefully will thrive</p>
         </div>
     </div>
-   
+
     <div id="block">
-        <h2>latest entries:</h2>
-        <ul id="latest-entry-list">
+        <h2>browse by category:</h2>
+        <nav class="category-nav">
+            <a href="#all">all entries</a>
+            <a href="#short">short</a>
+            <a href="#long">long</a>
+            <a href="#timeless">timeless</a>
+            <a href="#archive">archive</a>
+        </nav>
 
-        <li>
-            <h3>No one is perfect</h3>
-            <p><strong>Date:</strong> 2025-10-11</p>
-            <p><strong>Tags:</strong> #random</p>
-            <p>No one is perfect - but I will try to be. I think that is the mindset that I should have. At least in part. Yes, I already wrote about my struggle with perfectionism and how I hate it, but maybe while being a *perfectionist*, I am not determined to *be* perfect. While wanting to get a perfect result, I am not trying to do it perfectly. I am procrastinating, lazy, I get bored too fast and never become the kind of person who could actually reach perfection. Great things are done by great men? Well I am not great then how do I achieve the "greatness"? We will see in a week how and if I changed something in my life.</p>
-        </li>
+        <!-- Hidden anchor targets -->
+        <span id="all" class="anchor-offset"></span>
+        <span id="short" class="anchor-offset"></span>
+        <span id="long" class="anchor-offset"></span>
+        <span id="timeless" class="anchor-offset"></span>
+        <span id="archive" class="anchor-offset"></span>
 
-        <li>
-            <h3>I don't feel like writing</h3>
-            <p><strong>Date:</strong> 2025-10-07</p>
-            <p><strong>Tags:</strong> #reflection</p>
-            <p>I don't feel like writing. I don't have many themes I want to write or even ones that I do can write about. I shall take a break and again rethink and rearrange some of the aspects of my routine. After a month of school I feel like I no longer have the energy anymore to float, so before drowning completely I will try to change some things in my life. Maybe I will keep this blog updated. Maybe I won't.</p>
-        </li>
+        <!-- All Entries Section -->
+        <div id="all-section" class="category-section">
+            <h2 class="category-title">all entries:</h2>
+            <ul class="entry-list">
+                <li>
+                    <h3>Fahrenheit 451: The Hell We Walk Towards</h3>
+                    <p><strong>Date:</strong> 2025-11-10</p>
+                    <p><strong>Tags:</strong> #book #review #essay</p>
+                    <p><br>
+Ray Bradbury&#39;s Fahrenheit 451 is not a prediction of society&#39;s future as many of the readers saw it, but Bradbury&#39;s attempt to prevent it from happening. A future of an illiterate, stupid herd of animals driven only by instinct, hiding from reality and themselves. The worst kind of hell is the one that people gratefully walk towards.<br>
+<br>
+The main character of the story - Guy Montag - is a fireman that in the same is hot, like the fire he brings into people&#39;s homes and cold, like the books, calm and curious of experiencing and understanding. He is stretched between those two ideologies. His metamorphosis started long before the first pages of the book. He had been stealing book from burning houses and hiding them in his own. That shows what side he is really on before he even chooses. He snaps during a crucial event. He begins to accept what he had done, the moment Captain Beatty steps in.<br>
+<br>
+Captain Beatty is the chief of Montag&#39;s firemen station. He stands solid for ideals of the Fire Salamander, although he is not just someone that had been said to believe in the new system. As a fireman he also got access to books and like Guy he read them. He appears intellectual and well-read person as he throws quotes and poems at Montag and that is the most terrifying part. He saw the other side of things. He saw and understood what the books are talking about and yet chose the soft lies of his world. He is Guy Montag who chose to burn books. He was given a choice and he chose fire with all his heart. <br>
+<br>
+People like Captain Beatty build this world by using people&#39;s natural desire for comfort over truth and their conflict to remove that from them, to bring control over them and so called &quot;peace&quot;. <br>
+<br>
+Seventy years after its publication Fahrenheit 451 remains a brutal mirror of reality we live in. While Montag&#39;s journey should inspire us, we must be warned of not to become Captain Beatty in the end. The true terror of Bradbury&#39;s piece is not that people burn the books, but do not see the point in reading them.<br>
+<br>
+</p>
+                </li>
 
-        <li>
-            <h3>Learning to play guitar</h3>
-            <p><strong>Date:</strong> 2025-10-03</p>
-            <p><strong>Tags:</strong> #life</p>
-            <p>I am setting up a goal for myself. I am determined to play at least one of my favorite songs on an acoustic guitar by the end of this month. I am into the rock genre and acoustic guitar was not really made for it, but I still have room to stretch. I could play Metallica, for example "Nothing Else Matters". I will record a video and publish it on my instagram for everyone to see if I failed or succeeded in this challenge. My dear friends that are reading it right now are free to mock me if I will not publish anything within a month.</p>
-        </li>
+                <li>
+                    <h3>No one is perfect</h3>
+                    <p><strong>Date:</strong> 2025-10-11</p>
+                    <p><strong>Tags:</strong> #random</p>
+                    <p><br>
+No one is perfect - but I will try to be.<br>
+I think that is the mindset that I should have. At least in part. Yes, I already wrote about my struggle with perfectionism and how I hate it, but maybe while being a *perfectionist*, I am not determined to *be* perfect. While wanting to get a perfect result, I am not trying to do it perfectly. I am procrastinating, lazy, I get bored too fast and never become the kind of person who could actually reach perfection. Great things are done by great men? Well I am not great then how do I achieve the &quot;greatness&quot;?<br>
+<br>
+We will see in a week how and if I changed something in my life.</p>
+                </li>
 
-        <li>
-            <h3>What AI Really Can Do Now</h3>
-            <p><strong>Date:</strong> 2025-09-29</p>
-            <p><strong>Tags:</strong> #article</p>
-            <p>I read an article from The Newsweek that is called "What AI Really Can Do Now" and explores what Artificial Intelligence is actually better suited for. Articles like that give hope to us mere mortals that AI will not actually take over people's jobs and we - students, still have a chance of getting a job on the bleeding job market. Here are some of the key ideas: - AI is augmentation - not automation; - People have to be in control in order to accept the new tech. - People are better suited for precise work and AI is for creative collaboration In my opinion augmentation of AI is the future of our everyday life. I can only dream of an Artificial Intelligence like Jarvis from Ironman movies. It is having a companion that knows everything about you and therefore able to help in every aspect of your life. Imagine a personal doctor that monitors your health, a personal gym coach that personalizing your training to fit you, a work assistant handling the monotonous tasks and all rolled into one. This AI would clear so much in my life. Of course I see the flip side of this coin - loss of personal try-fail-succeed loop of individual growth of each one of us. It would definitely change how humans interact with each other, perceive the world and experience it. For example, this machine assistant would probably be determining our life in some way. If this AI is our stability, it would probably limit us in order to "protect", but by the cost of our natural curiosity. If more Artificial Intelligence means less Natural Intelligence then I'm definitely against it. I don't want to be held back by technology that is comfortable and convenient. Curiosity is what made us humans so unique - why lose that?</p>
-        </li>
+                <li>
+                    <h3>I don&#39;t feel like writing</h3>
+                    <p><strong>Date:</strong> 2025-10-07</p>
+                    <p><strong>Tags:</strong> #reflection</p>
+                    <p><br>
+I don&#39;t feel like writing. I don&#39;t have many themes I want to write or even ones that I do can write about. I shall take a break and again rethink and rearrange some of the aspects of my routine. After a month of school I feel like I no longer have the energy anymore to float, so before drowning completely I will try to change some things in my life. <br>
+<br>
+Maybe I will keep this blog updated. Maybe I won&#39;t.</p>
+                </li>
 
-        <li>
-            <h3>Not about Minecraft</h3>
-            <p><strong>Date:</strong> 2025-09-27</p>
-            <p><strong>Tags:</strong> #reflection</p>
-            <p>I see those people on the internet. Those who built magnificent structures; those who redstone computers and automate everything; those who have all the diamonds in the world; those who have all the fame. I want it too. What do they have that I don’t? I can’t commit to one world long enough to have all that myself and all that is left is just watching them commit. Watching them build. Watching them develop. Watching them getting the resources and the fame. I see those people on the internet. I hate to watch them. But I hate even more that I don’t give myself the chance to grow like they do</p>
-        </li>
+                <li>
+                    <h3>Learning to play guitar</h3>
+                    <p><strong>Date:</strong> 2025-10-03</p>
+                    <p><strong>Tags:</strong> #life</p>
+                    <p><br>
+I am setting up a goal for myself. I am determined to play at least one of my favorite songs on an acoustic guitar by the end of this month. I am into the rock genre and acoustic guitar was not really made for it, but I still have room to stretch. I could play Metallica, for example &quot;Nothing Else Matters&quot;.<br>
+<br>
+I will record a video and publish it on my instagram for everyone to see if I failed or succeeded in this challenge. My dear friends that are reading it right now are free to mock me if I will not publish anything within a month.</p>
+                </li>
 
-        <li>
-            <h3>No-wait-gen.</h3>
-            <p><strong>Date:</strong> 2025-09-25</p>
-            <p><strong>Tags:</strong> #random</p>
-            <p>We got too comfortable. Every day we use lots of services and expect from them to be as easy and fast to use as possible. Moreover, new generation lives in a time when a message is delivered in milliseconds, we can make it around the world in days and get our packages in weeks. We don't like to wait and we're not used to that. As a matter of fact, I got this thought when I registered on some website and I didn't get my email immediately after. It really bothered me in the moment. But was that a long wait? No, just a minute longer. I don't even understand why I'd let this thing captivate my mind for that long. I was not in a rush, this service wasn't really so important and still I was irritated. We got used to getting the information in a glance and now even small anticipation is killing us.</p>
-        </li>
+                <li>
+                    <h3>What AI Really Can Do Now</h3>
+                    <p><strong>Date:</strong> 2025-09-29</p>
+                    <p><strong>Tags:</strong> #article</p>
+                    <p><br>
+I read an article from The Newsweek that is called &quot;What AI Really Can Do Now&quot; and explores what Artificial Intelligence is actually better suited for. Articles like that give hope to us mere mortals that AI will not actually take over people&#39;s jobs and we - students, still have a chance of getting a job on the bleeding job market.<br>
+<br>
+Here are some of the key ideas:<br>
+- AI is augmentation - not automation;<br>
+- People have to be in control in order to accept the new tech. <br>
+- People are better suited for precise work and AI is for creative collaboration<br>
+<br>
+In my opinion augmentation of AI is the future of our everyday life. I can only dream of an Artificial Intelligence like Jarvis from Ironman movies. It is having a companion that knows everything about you and therefore able to help in every aspect of your life. Imagine a personal doctor that monitors your health, a personal gym coach that personalizing your training to fit you, a work assistant handling the monotonous tasks and all rolled into one. This AI would clear so much in my life.<br>
+<br>
+Of course I see the flip side of this coin - loss of personal try-fail-succeed loop of individual growth of each one of us. It would definitely change how humans interact with each other, perceive the world and experience it. For example, this machine assistant would probably be determining our life in some way. If this AI is our stability, it would probably limit us in order to &quot;protect&quot;, but by the cost of our natural curiosity.<br>
+<br>
+If more Artificial Intelligence means less Natural Intelligence then I&#39;m definitely against it. I don&#39;t want to be held back by technology that is comfortable and convenient. Curiosity is what made us humans so unique - why lose that?</p>
+                </li>
 
-        <li>
-            <h3>Blank page</h3>
-            <p><strong>Date:</strong> 2025-09-23</p>
-            <p><strong>Tags:</strong> #reflection</p>
-            <p>I have this fear of blank pages. When you see nothing and don't know where to start. It is not only about writing. I could say that we meet it in our daily life as well: when we turn the calendar, when we start reading new book, when we look at long to-do list in the morning. The fear of start. The fear of having to decide. Why do we run from making decisions? Isn't that our greatest achievement? The right to decide? To choose? To be wrong? To be right? To learn and to grow? How come that we are afraid of our own development? And yet here I am... writing about it... on a blank page.</p>
-        </li>
+                <li>
+                    <h3>Not about Minecraft</h3>
+                    <p><strong>Date:</strong> 2025-09-27</p>
+                    <p><strong>Tags:</strong> #reflection</p>
+                    <p><br>
+I see those people on the internet. Those who built magnificent structures; those who redstone computers and automate everything; those who have all the diamonds in the world; those who have all the fame. I want it too. What do they have that I don’t? I can’t commit to one world long enough to have all that myself and all that is left is just watching them commit. Watching them build. Watching them develop. Watching them getting the resources and the fame. I see those people on the internet. I hate to watch them. But I hate even more that I don’t give myself the chance to grow like they do</p>
+                </li>
 
-        <li>
-            <h3>We have Tony Stark at home!</h3>
-            <p><strong>Date:</strong> 2025-09-21</p>
-            <p><strong>Tags:</strong> #random</p>
-            <p>I want someday to get to the level of engineering that will allow me to practically become him - Tony Stark. I'll be building, planning, exploring new ideas and in the end have something practical I'm proud of. All my ideas are too ambitious for my current level but projects of lower scale just don't interest me at all. I might need to become very intentional about the things I do, learn and spend time on. But it won't stop me from building my own arc reactor in not-so-cave from not-so-box-scraps B)</p>
-        </li>
+                <li>
+                    <h3>No-wait-gen.</h3>
+                    <p><strong>Date:</strong> 2025-09-25</p>
+                    <p><strong>Tags:</strong> #random</p>
+                    <p><br>
+We got too comfortable. Every day we use lots of services and expect from them to be as easy and fast to use as possible. Moreover, new generation lives in a time when a message is delivered in milliseconds, we can make it around the world in days and get our packages in weeks. We don&#39;t like to wait and we&#39;re not used to that. <br>
+As a matter of fact, I got this thought when I registered on some website and I didn&#39;t get my email immediately after. It really bothered me in the moment. But was that a long wait? No, just a minute longer. I don&#39;t even understand why I&#39;d let this thing captivate my mind for that long. I was not in a rush, this service wasn&#39;t really so important and still I was irritated. <br>
+We got used to getting the information in a glance and now even small anticipation is killing us.</p>
+                </li>
 
-        <li>
-            <h3>Potential</h3>
-            <p><strong>Date:</strong> 2025-09-19</p>
-            <p><strong>Tags:</strong> #reflection</p>
-            <p>I am in this age of open doors and opportunities in every direction. For me, it's hard to decide on a "final" choice. I have this fear of wasted potential because deep inside I'm sure that whatever path I'll choose and stick to I will succeed anyway. Some Main Character energy, excuse me. But also I am very lazy. I know that I need to prepare (for whatever), but I'm just... confident that I'll do fine even without the preparation. Sometimes I wish that I was so insecure that I would prepare to death. But no. I choose the procrastination instead of success.</p>
-        </li>
+                <li>
+                    <h3>Blank page</h3>
+                    <p><strong>Date:</strong> 2025-09-23</p>
+                    <p><strong>Tags:</strong> #reflection</p>
+                    <p><br>
+I have this fear of blank pages. When you see nothing and don&#39;t know where to start. It is not only about writing. I could say that we meet it in our daily life as well: when we turn the calendar, when we start reading new book, when we look at long to-do list in the morning. The fear of start. The fear of having to decide. Why do we run from making decisions? Isn&#39;t that our greatest achievement? The right to decide? To choose? To be wrong? To be right? To learn and to grow? How come that we are afraid of our own development? And yet here I am... writing about it... on a blank page.</p>
+                </li>
 
-        <li>
-            <h3>Calmest time</h3>
-            <p><strong>Date:</strong> 2025-09-17</p>
-            <p><strong>Tags:</strong> #random</p>
-            <p>I like it after the sunset and before the sunrise. This is the only time when I am truly alone. In complete silence. When people are slowing down, getting ready to bed, and overall the darker half of the Earth is cooling down. When you try to be as silent as possible so as not to disturb. tick. tock. tick. tock. As if I get some kind of inspiration that you aren’t able to get during the day. When your mind is tired but still functions, and the natural flow of thought is filling the notes, the blank canvas, the empty assignment. I like it after the sunset and before the sunrise.</p>
-        </li>
+                <li>
+                    <h3>We have Tony Stark at home!</h3>
+                    <p><strong>Date:</strong> 2025-09-21</p>
+                    <p><strong>Tags:</strong> #random</p>
+                    <p><br>
+I want someday to get to the level of engineering that will allow me to practically become him - Tony Stark. I&#39;ll be building, planning, exploring new ideas and in the end have something practical I&#39;m proud of. All my ideas are too ambitious for my current level but projects of lower scale just don&#39;t interest me at all. I might need to become very intentional about the things I do, learn and spend time on. But it won&#39;t stop me from building my own arc reactor in not-so-cave from not-so-box-scraps B)</p>
+                </li>
 
-        <li>
-            <h3>Lowering the plank</h3>
-            <p><strong>Date:</strong> 2025-09-15</p>
-            <p><strong>Tags:</strong> #random</p>
-            <p>I see how again, I have been caught in the net of perfectionism and high standards. My previous entries are more and more… philosophical. as if, I’m writing about "important" stuff but sometimes there are no important things to write about. Life is just a routine and goes on and on and on…</p>
-        </li>
+                <li>
+                    <h3>Potential</h3>
+                    <p><strong>Date:</strong> 2025-09-19</p>
+                    <p><strong>Tags:</strong> #reflection</p>
+                    <p> <br>
+I am in this age of open doors and opportunities in every direction. For me, it&#39;s hard to decide on a &quot;final&quot; choice. I have this fear of wasted potential because deep inside I&#39;m sure that whatever path I&#39;ll choose and stick to I will succeed anyway. Some Main Character energy, excuse me. But also I am very lazy. I know that I need to prepare (for whatever), but I&#39;m just... confident that I&#39;ll do fine even without the preparation. Sometimes I wish that I was so insecure that I would prepare to death. But no. I choose the procrastination instead of success. </p>
+                </li>
 
-        <li>
-            <h3>My struggle with procrastination</h3>
-            <p><strong>Date:</strong> 2025-09-13</p>
-            <p><strong>Tags:</strong> #struggle</p>
-            <p>Procrastination is a modern person's worst enemy. Why do we do it even when we're fully aware? I caught myself thinking: "I know that I'll regret this decision and I have more important things to do". Like, huh!? What do you mean you know? I know that you know and that is the problem. </br> </br> Sometimes I think me and me are just two different people, two different minds in one body, and somehow the dumbest is the strongest that loves straightforward things and pleasure. The one that is putting now over tomorrow.</br> </br>I hate the constant loop of thinking about what I should have done instead of that and then. I literally can spend a few hours of constant doomscrolling and then turn on turbo productivity mode and do everything without the phone, social media and be happy about progress done. Am I this adrenaline junkie that cannot live without having stress in his life?</p>
-        </li>
+                <li>
+                    <h3>Calmest time</h3>
+                    <p><strong>Date:</strong> 2025-09-17</p>
+                    <p><strong>Tags:</strong> #random</p>
+                    <p><br>
+I like it after the sunset and before the sunrise. This is the only time when I am truly alone. In complete silence. When people are slowing down, getting ready to bed, and overall the darker half of the Earth is cooling down. When you try to be as silent as possible so as not to disturb. tick. tock. tick. tock. As if I get some kind of inspiration that you aren’t able to get during the day. When your mind is tired but still functions, and the natural flow of thought is filling the notes, the blank canvas, the empty assignment. I like it after the sunset and before the sunrise.</p>
+                </li>
 
-        <li>
-            <h3>In pursuit of extraordinary life</h3>
-            <p><strong>Date:</strong> 2025-09-11</p>
-            <p><strong>Tags:</strong> #life</p>
-            <p>I am certainly chasing my own ideal but just as to a horizon Im never coming closer. Isn't this what people call “The rat race”? When we all, living in a capitalistic world, are trying to get to the top, to be the best, to earn more? Even if we deny it, society still carries us and as we could not stay still in the ocean - we could not stay still in our society. Its funny how I in my pursuit of the extraordinary is writing about how we all are trying to achieve it while being absolutely mediocre, and while thinking those thoughts and writing those lines I'm being extremely average. If by being "different" and thinking "out of the box" I am already being boring and non-creative: what is then the extraordinary life?</p>
-        </li>
+                <li>
+                    <h3>Lowering the plank</h3>
+                    <p><strong>Date:</strong> 2025-09-15</p>
+                    <p><strong>Tags:</strong> #random</p>
+                    <p><br>
+I see how again, I have been caught in the net of perfectionism and high standards. My previous entries are more and more… philosophical. as if, I’m writing about &quot;important&quot; stuff but sometimes there are no important things to write about. Life is just a routine and goes on and on and on…</p>
+                </li>
 
-        <li>
-            <h3>My struggle with Nvim</h3>
-            <p><strong>Date:</strong> 2025-09-09</p>
-            <p><strong>Tags:</strong> #struggle</p>
-            <p>Neovim is basically Vim’s offspring: a text editor that refuses to behave like any text editor you’ve ever used. I first heard of nvim from its famous ambassador ✨ThePrimeagen✨ but i never nearly imagined how deep is the rabbit hole. I literally started hating myself after using it for writing a simple C++ script and again and again failing to use hjkl instead of arrows. Nvim and his older brother Vim are in the no-mouse-cursor and for all of the actions you use the keyboard. I dont know if I will continue learning and using nvim motions and go into “customization” rage. At best, I’ll gain some muscle memory. At worst, I’ll still be googling “how to quit Vim” when I’m 30.</p>
-        </li>
+                <li>
+                    <h3>My struggle with procrastination</h3>
+                    <p><strong>Date:</strong> 2025-09-13</p>
+                    <p><strong>Tags:</strong> #struggle</p>
+                    <p><br>
+Procrastination is a modern person&#39;s worst enemy. Why do we do it even when we&#39;re fully aware? I caught myself thinking: &quot;I know that I&#39;ll regret this decision and I have more important things to do&quot;. Like, huh!? What do you mean you know? I know that you know and that is the problem. &lt;/br&gt; &lt;/br&gt; Sometimes I think me and me are just two different people, two different minds in one body, and somehow the dumbest is the strongest that loves straightforward things and pleasure. The one that is putting now over tomorrow.&lt;/br&gt; &lt;/br&gt;I hate the constant loop of thinking about what I should have done instead of that and then. I literally can spend a few hours of constant doomscrolling and then turn on turbo productivity mode and do everything without the phone, social media and be happy about progress done. Am I this adrenaline junkie that cannot live without having stress in his life?</p>
+                </li>
 
-        <li>
-            <h3>First note</h3>
-            <p><strong>Date:</strong> 2025-09-07</p>
-            <p><strong>Tags:</strong> #random</p>
-            <p>einecupcake is planned to be my sandbox for all programming of mine. I've caught myself procrastinating programming because in the end I would be made to commit and publish everything. I don't want to procrastinate. Until I get comfortable with myself and my main github I will put my work somewhere here.</p>
-        </li>
+                <li>
+                    <h3>In pursuit of extraordinary life</h3>
+                    <p><strong>Date:</strong> 2025-09-11</p>
+                    <p><strong>Tags:</strong> #life</p>
+                    <p><br>
+I am certainly chasing my own ideal but just as to a horizon Im never coming closer. Isn&#39;t this what people call “The rat race”? When we all, living in a capitalistic world, are trying to get to the top, to be the best, to earn more? Even if we deny it, society still carries us and as we could not stay still in the ocean - we could not stay still in our society. Its funny how I in my pursuit of the extraordinary is writing about how we all are trying to achieve it while being absolutely mediocre, and while thinking those thoughts and writing those lines I&#39;m being extremely average. If by being &quot;different&quot; and thinking &quot;out of the box&quot; I am already being boring and non-creative: what is then the extraordinary life? <br>
+</p>
+                </li>
 
-        </ul>
+                <li>
+                    <h3>My struggle with Nvim</h3>
+                    <p><strong>Date:</strong> 2025-09-09</p>
+                    <p><strong>Tags:</strong> #struggle</p>
+                    <p><br>
+Neovim is basically Vim’s offspring: a text editor that refuses to behave like any text editor you’ve ever used.<br>
+I first heard of nvim from its famous ambassador ✨ThePrimeagen✨ but i never nearly imagined how deep is the rabbit hole. I literally started hating myself after using it for writing a simple C++ script and again and again failing to use hjkl instead of arrows. Nvim and his older brother Vim are in the no-mouse-cursor and for all of the actions you use the keyboard. I dont know if I will continue learning and using nvim motions and go into “customization” rage. At best, I’ll gain some muscle memory. At worst, I’ll still be googling “how to quit Vim” when I’m 30.</p>
+                </li>
+
+                <li>
+                    <h3>First note</h3>
+                    <p><strong>Date:</strong> 2025-09-07</p>
+                    <p><strong>Tags:</strong> #random</p>
+                    <p><br>
+einecupcake is planned to be my sandbox for all programming of mine. I&#39;ve caught myself procrastinating programming because in the end I would be made to commit and publish everything. I don&#39;t want to procrastinate. Until I get comfortable with myself and my main github I will put my work somewhere here.<br>
+<br>
+<br>
+</p>
+                </li>
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+        </div>
+
+        <!-- Short Entries Section -->
+        <div id="short-section" class="category-section">
+            <h2 class="category-title">short entries:</h2>
+            <ul class="entry-list">
+                <li>
+                    <h3>No one is perfect</h3>
+                    <p><strong>Date:</strong> 2025-10-11</p>
+                    <p><strong>Tags:</strong> #random</p>
+                    <p><br>
+No one is perfect - but I will try to be.<br>
+I think that is the mindset that I should have. At least in part. Yes, I already wrote about my struggle with perfectionism and how I hate it, but maybe while being a *perfectionist*, I am not determined to *be* perfect. While wanting to get a perfect result, I am not trying to do it perfectly. I am procrastinating, lazy, I get bored too fast and never become the kind of person who could actually reach perfection. Great things are done by great men? Well I am not great then how do I achieve the &quot;greatness&quot;?<br>
+<br>
+We will see in a week how and if I changed something in my life.</p>
+                </li>
+
+                <li>
+                    <h3>I don&#39;t feel like writing</h3>
+                    <p><strong>Date:</strong> 2025-10-07</p>
+                    <p><strong>Tags:</strong> #reflection</p>
+                    <p><br>
+I don&#39;t feel like writing. I don&#39;t have many themes I want to write or even ones that I do can write about. I shall take a break and again rethink and rearrange some of the aspects of my routine. After a month of school I feel like I no longer have the energy anymore to float, so before drowning completely I will try to change some things in my life. <br>
+<br>
+Maybe I will keep this blog updated. Maybe I won&#39;t.</p>
+                </li>
+
+                <li>
+                    <h3>Learning to play guitar</h3>
+                    <p><strong>Date:</strong> 2025-10-03</p>
+                    <p><strong>Tags:</strong> #life</p>
+                    <p><br>
+I am setting up a goal for myself. I am determined to play at least one of my favorite songs on an acoustic guitar by the end of this month. I am into the rock genre and acoustic guitar was not really made for it, but I still have room to stretch. I could play Metallica, for example &quot;Nothing Else Matters&quot;.<br>
+<br>
+I will record a video and publish it on my instagram for everyone to see if I failed or succeeded in this challenge. My dear friends that are reading it right now are free to mock me if I will not publish anything within a month.</p>
+                </li>
+
+                <li>
+                    <h3>Not about Minecraft</h3>
+                    <p><strong>Date:</strong> 2025-09-27</p>
+                    <p><strong>Tags:</strong> #reflection</p>
+                    <p><br>
+I see those people on the internet. Those who built magnificent structures; those who redstone computers and automate everything; those who have all the diamonds in the world; those who have all the fame. I want it too. What do they have that I don’t? I can’t commit to one world long enough to have all that myself and all that is left is just watching them commit. Watching them build. Watching them develop. Watching them getting the resources and the fame. I see those people on the internet. I hate to watch them. But I hate even more that I don’t give myself the chance to grow like they do</p>
+                </li>
+
+                <li>
+                    <h3>No-wait-gen.</h3>
+                    <p><strong>Date:</strong> 2025-09-25</p>
+                    <p><strong>Tags:</strong> #random</p>
+                    <p><br>
+We got too comfortable. Every day we use lots of services and expect from them to be as easy and fast to use as possible. Moreover, new generation lives in a time when a message is delivered in milliseconds, we can make it around the world in days and get our packages in weeks. We don&#39;t like to wait and we&#39;re not used to that. <br>
+As a matter of fact, I got this thought when I registered on some website and I didn&#39;t get my email immediately after. It really bothered me in the moment. But was that a long wait? No, just a minute longer. I don&#39;t even understand why I&#39;d let this thing captivate my mind for that long. I was not in a rush, this service wasn&#39;t really so important and still I was irritated. <br>
+We got used to getting the information in a glance and now even small anticipation is killing us.</p>
+                </li>
+
+                <li>
+                    <h3>Blank page</h3>
+                    <p><strong>Date:</strong> 2025-09-23</p>
+                    <p><strong>Tags:</strong> #reflection</p>
+                    <p><br>
+I have this fear of blank pages. When you see nothing and don&#39;t know where to start. It is not only about writing. I could say that we meet it in our daily life as well: when we turn the calendar, when we start reading new book, when we look at long to-do list in the morning. The fear of start. The fear of having to decide. Why do we run from making decisions? Isn&#39;t that our greatest achievement? The right to decide? To choose? To be wrong? To be right? To learn and to grow? How come that we are afraid of our own development? And yet here I am... writing about it... on a blank page.</p>
+                </li>
+
+                <li>
+                    <h3>We have Tony Stark at home!</h3>
+                    <p><strong>Date:</strong> 2025-09-21</p>
+                    <p><strong>Tags:</strong> #random</p>
+                    <p><br>
+I want someday to get to the level of engineering that will allow me to practically become him - Tony Stark. I&#39;ll be building, planning, exploring new ideas and in the end have something practical I&#39;m proud of. All my ideas are too ambitious for my current level but projects of lower scale just don&#39;t interest me at all. I might need to become very intentional about the things I do, learn and spend time on. But it won&#39;t stop me from building my own arc reactor in not-so-cave from not-so-box-scraps B)</p>
+                </li>
+
+                <li>
+                    <h3>Potential</h3>
+                    <p><strong>Date:</strong> 2025-09-19</p>
+                    <p><strong>Tags:</strong> #reflection</p>
+                    <p> <br>
+I am in this age of open doors and opportunities in every direction. For me, it&#39;s hard to decide on a &quot;final&quot; choice. I have this fear of wasted potential because deep inside I&#39;m sure that whatever path I&#39;ll choose and stick to I will succeed anyway. Some Main Character energy, excuse me. But also I am very lazy. I know that I need to prepare (for whatever), but I&#39;m just... confident that I&#39;ll do fine even without the preparation. Sometimes I wish that I was so insecure that I would prepare to death. But no. I choose the procrastination instead of success. </p>
+                </li>
+
+                <li>
+                    <h3>Calmest time</h3>
+                    <p><strong>Date:</strong> 2025-09-17</p>
+                    <p><strong>Tags:</strong> #random</p>
+                    <p><br>
+I like it after the sunset and before the sunrise. This is the only time when I am truly alone. In complete silence. When people are slowing down, getting ready to bed, and overall the darker half of the Earth is cooling down. When you try to be as silent as possible so as not to disturb. tick. tock. tick. tock. As if I get some kind of inspiration that you aren’t able to get during the day. When your mind is tired but still functions, and the natural flow of thought is filling the notes, the blank canvas, the empty assignment. I like it after the sunset and before the sunrise.</p>
+                </li>
+
+                <li>
+                    <h3>Lowering the plank</h3>
+                    <p><strong>Date:</strong> 2025-09-15</p>
+                    <p><strong>Tags:</strong> #random</p>
+                    <p><br>
+I see how again, I have been caught in the net of perfectionism and high standards. My previous entries are more and more… philosophical. as if, I’m writing about &quot;important&quot; stuff but sometimes there are no important things to write about. Life is just a routine and goes on and on and on…</p>
+                </li>
+
+                <li>
+                    <h3>My struggle with procrastination</h3>
+                    <p><strong>Date:</strong> 2025-09-13</p>
+                    <p><strong>Tags:</strong> #struggle</p>
+                    <p><br>
+Procrastination is a modern person&#39;s worst enemy. Why do we do it even when we&#39;re fully aware? I caught myself thinking: &quot;I know that I&#39;ll regret this decision and I have more important things to do&quot;. Like, huh!? What do you mean you know? I know that you know and that is the problem. &lt;/br&gt; &lt;/br&gt; Sometimes I think me and me are just two different people, two different minds in one body, and somehow the dumbest is the strongest that loves straightforward things and pleasure. The one that is putting now over tomorrow.&lt;/br&gt; &lt;/br&gt;I hate the constant loop of thinking about what I should have done instead of that and then. I literally can spend a few hours of constant doomscrolling and then turn on turbo productivity mode and do everything without the phone, social media and be happy about progress done. Am I this adrenaline junkie that cannot live without having stress in his life?</p>
+                </li>
+
+                <li>
+                    <h3>In pursuit of extraordinary life</h3>
+                    <p><strong>Date:</strong> 2025-09-11</p>
+                    <p><strong>Tags:</strong> #life</p>
+                    <p><br>
+I am certainly chasing my own ideal but just as to a horizon Im never coming closer. Isn&#39;t this what people call “The rat race”? When we all, living in a capitalistic world, are trying to get to the top, to be the best, to earn more? Even if we deny it, society still carries us and as we could not stay still in the ocean - we could not stay still in our society. Its funny how I in my pursuit of the extraordinary is writing about how we all are trying to achieve it while being absolutely mediocre, and while thinking those thoughts and writing those lines I&#39;m being extremely average. If by being &quot;different&quot; and thinking &quot;out of the box&quot; I am already being boring and non-creative: what is then the extraordinary life? <br>
+</p>
+                </li>
+
+                <li>
+                    <h3>My struggle with Nvim</h3>
+                    <p><strong>Date:</strong> 2025-09-09</p>
+                    <p><strong>Tags:</strong> #struggle</p>
+                    <p><br>
+Neovim is basically Vim’s offspring: a text editor that refuses to behave like any text editor you’ve ever used.<br>
+I first heard of nvim from its famous ambassador ✨ThePrimeagen✨ but i never nearly imagined how deep is the rabbit hole. I literally started hating myself after using it for writing a simple C++ script and again and again failing to use hjkl instead of arrows. Nvim and his older brother Vim are in the no-mouse-cursor and for all of the actions you use the keyboard. I dont know if I will continue learning and using nvim motions and go into “customization” rage. At best, I’ll gain some muscle memory. At worst, I’ll still be googling “how to quit Vim” when I’m 30.</p>
+                </li>
+
+                <li>
+                    <h3>First note</h3>
+                    <p><strong>Date:</strong> 2025-09-07</p>
+                    <p><strong>Tags:</strong> #random</p>
+                    <p><br>
+einecupcake is planned to be my sandbox for all programming of mine. I&#39;ve caught myself procrastinating programming because in the end I would be made to commit and publish everything. I don&#39;t want to procrastinate. Until I get comfortable with myself and my main github I will put my work somewhere here.<br>
+<br>
+<br>
+</p>
+                </li>
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+        </div>
+
+        <!-- Long Entries Section -->
+        <div id="long-section" class="category-section">
+            <h2 class="category-title">long entries:</h2>
+            <ul class="entry-list">
+                <li>
+                    <h3>Fahrenheit 451: The Hell We Walk Towards</h3>
+                    <p><strong>Date:</strong> 2025-11-10</p>
+                    <p><strong>Tags:</strong> #book #review #essay</p>
+                    <p><br>
+Ray Bradbury&#39;s Fahrenheit 451 is not a prediction of society&#39;s future as many of the readers saw it, but Bradbury&#39;s attempt to prevent it from happening. A future of an illiterate, stupid herd of animals driven only by instinct, hiding from reality and themselves. The worst kind of hell is the one that people gratefully walk towards.<br>
+<br>
+The main character of the story - Guy Montag - is a fireman that in the same is hot, like the fire he brings into people&#39;s homes and cold, like the books, calm and curious of experiencing and understanding. He is stretched between those two ideologies. His metamorphosis started long before the first pages of the book. He had been stealing book from burning houses and hiding them in his own. That shows what side he is really on before he even chooses. He snaps during a crucial event. He begins to accept what he had done, the moment Captain Beatty steps in.<br>
+<br>
+Captain Beatty is the chief of Montag&#39;s firemen station. He stands solid for ideals of the Fire Salamander, although he is not just someone that had been said to believe in the new system. As a fireman he also got access to books and like Guy he read them. He appears intellectual and well-read person as he throws quotes and poems at Montag and that is the most terrifying part. He saw the other side of things. He saw and understood what the books are talking about and yet chose the soft lies of his world. He is Guy Montag who chose to burn books. He was given a choice and he chose fire with all his heart. <br>
+<br>
+People like Captain Beatty build this world by using people&#39;s natural desire for comfort over truth and their conflict to remove that from them, to bring control over them and so called &quot;peace&quot;. <br>
+<br>
+Seventy years after its publication Fahrenheit 451 remains a brutal mirror of reality we live in. While Montag&#39;s journey should inspire us, we must be warned of not to become Captain Beatty in the end. The true terror of Bradbury&#39;s piece is not that people burn the books, but do not see the point in reading them.<br>
+<br>
+</p>
+                </li>
+
+                <li>
+                    <h3>What AI Really Can Do Now</h3>
+                    <p><strong>Date:</strong> 2025-09-29</p>
+                    <p><strong>Tags:</strong> #article</p>
+                    <p><br>
+I read an article from The Newsweek that is called &quot;What AI Really Can Do Now&quot; and explores what Artificial Intelligence is actually better suited for. Articles like that give hope to us mere mortals that AI will not actually take over people&#39;s jobs and we - students, still have a chance of getting a job on the bleeding job market.<br>
+<br>
+Here are some of the key ideas:<br>
+- AI is augmentation - not automation;<br>
+- People have to be in control in order to accept the new tech. <br>
+- People are better suited for precise work and AI is for creative collaboration<br>
+<br>
+In my opinion augmentation of AI is the future of our everyday life. I can only dream of an Artificial Intelligence like Jarvis from Ironman movies. It is having a companion that knows everything about you and therefore able to help in every aspect of your life. Imagine a personal doctor that monitors your health, a personal gym coach that personalizing your training to fit you, a work assistant handling the monotonous tasks and all rolled into one. This AI would clear so much in my life.<br>
+<br>
+Of course I see the flip side of this coin - loss of personal try-fail-succeed loop of individual growth of each one of us. It would definitely change how humans interact with each other, perceive the world and experience it. For example, this machine assistant would probably be determining our life in some way. If this AI is our stability, it would probably limit us in order to &quot;protect&quot;, but by the cost of our natural curiosity.<br>
+<br>
+If more Artificial Intelligence means less Natural Intelligence then I&#39;m definitely against it. I don&#39;t want to be held back by technology that is comfortable and convenient. Curiosity is what made us humans so unique - why lose that?</p>
+                </li>
+
+                
+
+
+
+</ul>
+        </div>
+
+        <!-- Timeless Entries Section -->
+        <div id="timeless-section" class="category-section">
+            <h2 class="category-title">timeless:</h2>
+            <ul class="entry-list">
+            </ul>
+        </div>
+
+        <!-- Archive Section -->
+        <div id="archive-section" class="category-section">
+            <h2 class="category-title">archive:</h2>
+            <ul class="entry-list">
+            </ul>
+        </div>
     </div>
 </body>
+
 </html>
